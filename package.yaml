@@ -23,6 +23,7 @@ dependencies:
 - base >= 4.7 && < 5
 - vector
 - split
+- bits-extra
 
 library:
   source-dirs: src

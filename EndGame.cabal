@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 639e15deebb19be51ad5325b2c80dae093ee30131ca94610de5e080f0eedda47
+-- hash: 953272d04014a886381718d825e546583f94dcf48705a64b2999f0ee5116a809
 
 name:           EndGame
 version:        0.1.0.0
@@ -28,12 +28,14 @@ source-repository head
 library
   exposed-modules:
       BitBoards
+      Rook
   other-modules:
       Paths_EndGame
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , bits-extra
     , split
     , vector
   default-language: Haskell2010
@@ -48,6 +50,7 @@ executable EndGame
   build-depends:
       EndGame
     , base >=4.7 && <5
+    , bits-extra
     , split
     , vector
   default-language: Haskell2010
@@ -63,6 +66,7 @@ test-suite EndGame-test
   build-depends:
       EndGame
     , base >=4.7 && <5
+    , bits-extra
     , split
     , vector
   default-language: Haskell2010
